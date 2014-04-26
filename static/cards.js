@@ -46,13 +46,13 @@
   //ply1h2.innerHTML ='where';
   ply1h1.id = 'p1count';
   //ply1h1.innerHTML ='Lets test this';
-  ply1span.appendChild(ply1h1);
+  //ply1span.appendChild(ply1h1);
   
-  ply1span2.appendChild(ply1h2);
-  document.body.appendChild(ply1span);
-  document.body.appendChild(ply1span2);
-  document.body.appendChild(showwhosturn1);
-  document.body.appendChild(showwhosturn2);
+  //ply1span2.appendChild(ply1h2);
+  //document.body.appendChild(ply1span);
+  //document.body.appendChild(ply1span2);
+  //document.body.appendChild(showwhosturn1);
+  //document.body.appendChild(showwhosturn2);
   
   var ply2span = document.createElement('span');
   var ply2span2 = document.createElement('span');
@@ -71,11 +71,11 @@
   
   ply2h1.id = 'p2count';
   //ply2h1.innerHTML ='Lets test this too'
-  ply2span.appendChild(ply2h1);
-  ply2span2.appendChild(ply2h2);
+  //ply2span.appendChild(ply2h1);
+  //ply2span2.appendChild(ply2h2);
   
-  document.body.appendChild(ply2span);
-  document.body.appendChild(ply2span2);
+  //document.body.appendChild(ply2span);
+  //document.body.appendChild(ply2span2);
   
   if(typeof(Storage)!=="undefined")
   {
@@ -452,13 +452,13 @@
     {
         if(whosturn ===1)
         {
-          showwhosturn1.innerHTML = 'YOUR TURN';
-          showwhosturn2.innerHTML = '';
+          //showwhosturn1.innerHTML = 'YOUR TURN';
+          //showwhosturn2.innerHTML = '';
         }
         else
         {
-          showwhosturn2.innerHTML = 'YOUR TURN';
-          showwhosturn1.innerHTML = '';
+          //showwhosturn2.innerHTML = 'YOUR TURN';
+          //showwhosturn1.innerHTML = '';
         }
     }
     
@@ -495,7 +495,7 @@
     yourturn();
   
   //Get the name of the players
-  var getPlayerNames=function()
+ /* var getPlayerNames=function()
   {
      player1name = window.prompt("Player 1 Enter Your Name!:");  
      player2name = window.prompt("Player 2 Enter Your Name!:");
@@ -505,14 +505,14 @@
           getPlayerNames();
       }
   }
-  
-      if(player1name.length <1 ||player2name.length <1)
+  */
+      /*if(player1name.length <1 ||player2name.length <1)
       {
           getPlayerNames();
-      }
+      }*/
   
-  ply1h1.innerHTML = player1name;
-  ply2h1.innerHTML = player2name;
+  //ply1h1.innerHTML = player1name;
+  //ply2h1.innerHTML = player2name;
   
   //turns the saved card matches over
     var flipsavedcards = function()
@@ -554,12 +554,12 @@
       if(whosturn%2===1)
         {      
             player1matches++;   
-            ply1h2.innerHTML = player1matches;
+            //ply1h2.innerHTML = player1matches;
         }
         else
         {
             player2matches++
-            ply2h2.innerHTML = player2matches;
+            //ply2h2.innerHTML = player2matches;
         }
     };
   
@@ -710,7 +710,7 @@
     buttondiv.appendChild(butn);
     buttondiv.appendChild(countdiv);
     buttondiv.appendChild(newgamebutn);
-    setTimeout(assigntries, 2000);
+   // setTimeout(assigntries, 2000);
     bod.appendChild(buttondiv);
     
 };
